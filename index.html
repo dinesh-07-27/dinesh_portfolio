@@ -5,30 +5,27 @@
   <title>K Dinesh Reddy | Software Development Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar">
   <div class="logo">K Dinesh Reddy</div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#coding">Coding</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <section class="hero">
   <img src="profile.jpg" class="profile-pic" alt="Profile Photo">
 
@@ -36,7 +33,8 @@
   <p class="title">Software Development Engineer (Fresher) | Backend & AI Engineer</p>
 
   <p class="subtitle">
-    Building scalable backend systems and AI-powered applications using FastAPI, Python, and modern web technologies.
+    Backend-focused engineer who enjoys building scalable APIs, AI-powered systems,
+    and solving real-world problems with clean architecture and efficient design.
   </p>
 
   <div class="hero-buttons">
@@ -44,48 +42,65 @@
     <a href="resume.pdf" target="_blank" class="btn secondary">Download Resume</a>
   </div>
 
-  <!-- Social icons -->
   <div class="social-icons">
     <a href="https://github.com/dinesh-07-27" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://leetcode.com/" target="_blank"><i class="fa-solid fa-code"></i></a>
+    <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i></a>
   </div>
 </section>
 
-<!-- About -->
+<!-- ABOUT -->
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    Computer Science undergraduate with strong foundations in Java (OOP), Python, SQL, Data Structures & Algorithms, DBMS,
-    Operating Systems, and Computer Networks. Experienced in building AI-powered full-stack systems using FastAPI, React,
-    FAISS, Hugging Face Sentence-Transformers, and RAG with LLMs (Gemini API). Skilled in REST API design, async pipelines,
-    vector search, secure backend architecture, and performance optimisation.
+    I am a Computer Science undergraduate who discovered a strong interest in backend development while building APIs and full-stack systems during college projects.
+    Over time, I expanded into AI engineering by working with Retrieval-Augmented Generation (RAG), vector databases, and large language models.
+  </p>
+
+  <p>
+    I enjoy designing systems that are clean, scalable, and secure — from database schema design to API performance optimization.
+    I believe good engineering is about writing simple, maintainable code that solves real problems effectively.
+  </p>
+
+  <p>
+    My current goal is to start my career as a backend / AI engineer where I can work on production-grade systems, learn from experienced engineers,
+    and contribute to building reliable software products.
   </p>
 </section>
 
-<!-- Skills -->
+<!-- SKILLS -->
 <section id="skills" class="section gray">
   <h2>Skills</h2>
   <div class="skills-grid">
-    <span>Java (OOP)</span><span>Python</span><span>SQL</span><span>FastAPI</span><span>REST APIs</span><span>JWT Auth</span>
-    <span>React</span><span>HTML</span><span>CSS</span><span>PostgreSQL</span><span>SQLite</span>
-    <span>RAG</span><span>FAISS</span><span>Gemini API</span><span>Git</span><span>GitHub</span><span>Postman</span>
+    <span>Java (OOP)</span><span>Python</span><span>SQL</span>
+    <span>FastAPI</span><span>REST APIs</span><span>JWT Authentication</span>
+    <span>React</span><span>HTML</span><span>CSS</span>
+    <span>PostgreSQL</span><span>SQLite</span>
+    <span>RAG</span><span>FAISS</span><span>Gemini API</span>
+    <span>Git</span><span>GitHub</span><span>Postman</span>
   </div>
 </section>
 
-<!-- Projects -->
+<!-- PROJECTS -->
 <section id="projects" class="section">
   <h2>Projects</h2>
 
   <div class="project-card">
     <h3>Smart AI Customer Support Chatbot</h3>
     <p class="tech">FastAPI · React · FAISS · RAG · Sentence-Transformers · Gemini API</p>
+
+    <p><strong>Problem:</strong> Traditional chatbots fail to answer domain-specific queries accurately.</p>
+    <p><strong>Solution:</strong> Built a RAG-based AI chatbot that retrieves relevant documents using FAISS before generating responses.</p>
+
     <ul>
-      <li>Context-aware AI chatbot using Generative AI + RAG.</li>
-      <li>FAISS-based semantic document retrieval.</li>
-      <li>Sentiment analysis for automatic escalation.</li>
-      <li>Async FastAPI backend with optimized latency (~30% improvement).</li>
+      <li>Implemented semantic search with FAISS vector indexing.</li>
+      <li>Integrated Gemini LLM for contextual response generation.</li>
+      <li>Added sentiment detection to escalate critical issues.</li>
+      <li>Optimized async API calls to reduce response latency by ~30%.</li>
     </ul>
+
+    <p><strong>What I learned:</strong> Designing AI pipelines, vector databases, async backend optimization.</p>
+
     <a href="https://github.com/dinesh-07-27/smart-ai-chatbot-v2" target="_blank">
       <i class="fab fa-github"></i> GitHub Repository
     </a>
@@ -94,20 +109,75 @@
   <div class="project-card">
     <h3>Employee and Task Management Platform</h3>
     <p class="tech">FastAPI · React · PostgreSQL · JWT · RBAC</p>
+
+    <p><strong>Problem:</strong> Managing employee tasks securely with proper role separation.</p>
+    <p><strong>Solution:</strong> Developed a full-stack platform with role-based authentication.</p>
+
     <ul>
-      <li>Role-based access system for Admin & Employees.</li>
-      <li>JWT-secured authentication & PostgreSQL CRUD operations.</li>
-      <li>Protected dashboards with React.</li>
-      <li>Async, clean REST API architecture.</li>
+      <li>Designed JWT-based authentication and RBAC system.</li>
+      <li>Built REST APIs with FastAPI.</li>
+      <li>Optimized PostgreSQL queries for scalability.</li>
+      <li>Developed responsive dashboards using React.</li>
     </ul>
+
+    <p><strong>What I learned:</strong> Secure authentication, API design, database modeling.</p>
+
     <a href="https://github.com/dinesh-07-27/prou-fullstack-final" target="_blank">
       <i class="fab fa-github"></i> GitHub Repository
     </a>
   </div>
 </section>
 
-<!-- Education -->
-<section id="education" class="section gray">
+<!-- CODING -->
+<section id="coding" class="section gray">
+  <h2>Coding & Problem Solving</h2>
+  <p>
+    I actively practice Data Structures & Algorithms to strengthen problem-solving and logical thinking.
+  </p>
+
+  <ul>
+    <li>LeetCode: 202 problems solved</li>
+    <li>Strong in arrays, strings, recursion, hashing, stacks, queues, and trees</li>
+    <li>Practicing optimization and clean coding approaches</li>
+  </ul>
+
+  <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank">
+    <i class="fa-solid fa-code"></i> View LeetCode Profile
+  </a>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
+
+  <ul>
+    <li>
+      <strong>IBM – Generative AI using Watsonx (2025)</strong><br>
+      Learned foundation models, prompt engineering, and GenAI workflows.<br>
+      <a href="https://courses.vit.skillsnetwork.site/certificates/70be47b081d24bd19938536500c2995a" target="_blank">View Certificate</a>
+    </li>
+
+    <li>
+      <strong>Oracle – OCI 2025 Generative AI Professional</strong><br>
+      Validated skills in deploying secure AI workloads on OCI.<br>
+      <a href="https://drive.google.com/file/d/13465kZULvlHnIkO4Bq_wx2SXqkUufRg5/view" target="_blank">View Certificate</a>
+    </li>
+  </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section gray">
+  <h2>Experience & Activities</h2>
+  <ul>
+    <li>Built multiple academic and personal full-stack projects.</li>
+    <li>Participated in AI/ML workshops and technical bootcamps.</li>
+    <li>Helped peers understand backend concepts and API design.</li>
+    <li>Regularly experiment with new backend tools and AI frameworks.</li>
+  </ul>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
   <h2>Education</h2>
   <p>
     <strong>B.Tech in Computer Science and Engineering</strong><br>
@@ -116,8 +186,8 @@
   </p>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section">
+<!-- CONTACT -->
+<section id="contact" class="section gray">
   <h2>Contact</h2>
   <p>Email: dineshreddykondur@gmail.com</p>
   <p>Location: Hindupur, India</p>
@@ -125,7 +195,7 @@
   <div class="social-links">
     <a href="https://github.com/dinesh-07-27" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://leetcode.com/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a>
+    <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a>
   </div>
 </section>
 
