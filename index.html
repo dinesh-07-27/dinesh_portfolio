@@ -4,203 +4,314 @@
   <meta charset="UTF-8">
   <title>K Dinesh Reddy | Software Development Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of K Dinesh Reddy, Software Development Engineer specializing in Backend and AI.">
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Space Background Canvas -->
+  <canvas id="space-canvas"></canvas>
 
-<nav class="navbar">
-  <div class="logo">K Dinesh Reddy</div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#coding">Coding</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
 
-<section class="hero">
-  <img src="profile.jpg" class="profile-pic" alt="Profile Photo">
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <div class="logo">K Dinesh Reddy</div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#certifications" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <h1>K Dinesh Reddy</h1>
-  <p class="title">Software Development Engineer (Fresher) | Backend Developer (FastAPI) | Applied AI</p>
+  <header class="hero section reveal" id="home">
+    <div class="hero-content">
+      <div class="hero-image-wrap">
+        <img src="profile.jpg" class="profile-pic" alt="K Dinesh Reddy">
+        <div class="profile-glow"></div>
+      </div>
+      
+      <h1 class="hero-title">K Dinesh Reddy</h1>
+      <h2 class="hero-subtitle">
+        <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      
+      <p class="hero-desc">
+        Backend-focused engineer passionate about building scalable REST APIs, production-grade systems,
+        and AI-powered applications with clean architecture and strong security practices.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Work</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-file-download"></i> Resume</a>
+      </div>
+      
+      <div class="social-icons">
+        <a href="https://github.com/dinesh-07-27" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator a-bounce">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </header>
 
-  <p class="subtitle">
-    Backend-focused engineer passionate about building scalable REST APIs, production-grade systems,
-    and AI-powered applications with clean architecture and strong security practices.
-  </p>
+  <main>
+    <section id="about" class="section reveal">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-content glass-panel">
+        <div class="about-text">
+          <p>
+            I am a Computer Science undergraduate specializing in backend engineering, with strong foundations in
+            <strong>Data Structures & Algorithms, OOP, DBMS, Operating Systems</strong>, and <strong>Computer Networks</strong>.
+          </p>
+          <p>
+            I enjoy building reliable and scalable backend systems – from designing clean REST APIs and database schemas
+            to implementing secure authentication, role-based access control, and performance optimization.
+          </p>
+          <p>
+            I also have hands-on experience containerizing applications using Docker and deploying production systems
+            to the cloud with managed databases and API documentation using Swagger (OpenAPI).
+          </p>
+          <p>
+            My current goal is to start my career as a Backend / AI Engineer where I can work on real-world systems,
+            learn from experienced engineers, and grow into a strong system-design focused developer.
+          </p>
+        </div>
+        <div class="about-stats highlight-cards">
+          <div class="stat-card">
+             <i class="fa-solid fa-code"></i>
+             <h3>202+</h3>
+             <p>LeetCode Problems</p>
+          </div>
+          <div class="stat-card">
+             <i class="fa-solid fa-graduation-cap"></i>
+             <h3>7.55 / 10</h3>
+             <p>CGPA (VIT AP)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="hero-buttons">
-    <a href="#projects" class="btn primary">View Projects</a>
-    <a href="resume.pdf" target="_blank" class="btn secondary">Download Resume</a>
-  </div>
+    <section id="skills" class="section reveal pt-0">
+      <div class="section-header">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category glass-panel">
+          <h3 class="category-title"><i class="fas fa-server"></i> Backend & API</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Async APIs</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">RBAC</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-panel">
+          <h3 class="category-title"><i class="fas fa-database"></i> Database & Cloud</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Swagger</span>
+          </div>
+        </div>
+        
+        <div class="skill-category glass-panel">
+          <h3 class="category-title"><i class="fas fa-brain"></i> Applied AI & Tools</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="social-icons">
-    <a href="https://github.com/dinesh-07-27" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i></a>
-  </div>
-</section>
+    <section id="projects" class="section reveal pt-0">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="title-line"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card glass-panel">
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-cart-shopping project-icon"></i>
+              <div class="project-links">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Production-Grade E-commerce Backend</h3>
+            <div class="tech-stack">
+              <span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <p class="project-desc">
+              Designed and developed a production-ready backend with authentication, product catalog, cart management, order processing, and payment simulation.
+            </p>
+            <ul class="project-features">
+              <li>JWT-based auth & RBAC</li>
+              <li>Transactional order workflows with stock validation</li>
+              <li>Containerized using Docker & Render Cloud</li>
+            </ul>
+          </div>
+        </article>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a Computer Science undergraduate specializing in backend engineering, with strong foundations in
-    Data Structures & Algorithms, OOP, DBMS, Operating Systems, and Computer Networks.
-  </p>
-  <p>
-    I enjoy building reliable and scalable backend systems – from designing clean REST APIs and database schemas
-    to implementing secure authentication, role-based access control, and performance optimization.
-  </p>
-  <p>
-    I also have hands-on experience containerizing applications using Docker and deploying production systems
-    to the cloud with managed databases and API documentation using Swagger (OpenAPI).
-  </p>
-  <p>
-    My current goal is to start my career as a Backend / AI Engineer where I can work on real-world systems,
-    learn from experienced engineers, and grow into a strong system-design focused developer.
-  </p>
-</section>
+        <article class="project-card glass-panel">
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-users-cog project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/dinesh-07-27/prou-fullstack-final" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Employee & Task Management Platform</h3>
+            <div class="tech-stack">
+              <span>FastAPI</span><span>React</span><span>PostgreSQL</span>
+            </div>
+            <p class="project-desc">
+              Full-stack system with Admin and Employee roles featuring secure authentication middleware and optimized SQL queries.
+            </p>
+            <ul class="project-features">
+              <li>Role-based access control</li>
+              <li>Optimized CRUD queries</li>
+              <li>Protected React dashboards</li>
+            </ul>
+          </div>
+        </article>
 
-<section id="skills" class="section gray">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span>Java</span><span>Python</span><span>SQL</span>
-    <span>FastAPI</span><span>REST APIs</span><span>Async APIs</span>
-    <span>JWT Authentication</span><span>RBAC</span>
-    <span>PostgreSQL</span><span>SQLite</span><span>SQLAlchemy</span>
-    <span>Docker</span><span>Swagger (OpenAPI)</span>
-    <span>RAG</span><span>FAISS</span><span>Gemini API</span>
-    <span>React</span><span>HTML</span><span>CSS</span>
-    <span>Git</span><span>GitHub</span><span>Postman</span>
-  </div>
-</section>
+        <article class="project-card glass-panel">
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-robot project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/dinesh-07-27/smart-ai-chatbot-v2" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Smart AI Customer Support Chatbot</h3>
+            <div class="tech-stack">
+              <span>RAG</span><span>FAISS</span><span>Gemini API</span>
+            </div>
+            <p class="project-desc">
+              RAG-based chatbot for domain-specific Q&A implementing semantic document search and modular backend services.
+            </p>
+            <ul class="project-features">
+              <li>Semantic search with FAISS</li>
+              <li>~30% latency reduction via async pipelines</li>
+              <li>Sentence-Transformers integration</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
+    <section id="certifications" class="section reveal pt-0">
+      <div class="dual-layout">
+        <div class="certifications-col">
+          <div class="section-header">
+            <h2 class="section-title">Certifications</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item glass-panel">
+              <div class="timeline-dot"></div>
+              <h4>IBM – Generative AI Using Watsonx (2025)</h4>
+              <p>Learned foundation models, prompt engineering, and end-to-end GenAI workflows.</p>
+              <a href="https://courses.vit.skillsnetwork.site/certificates/70be47b081d24bd19938536500c2995a" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="timeline-item glass-panel">
+              <div class="timeline-dot"></div>
+              <h4>Oracle – OCI 2025 Generative AI Professional</h4>
+              <p>Validated expertise in building and deploying secure AI workloads on OCI.</p>
+              <a href="https://drive.google.com/file/d/13465kZULvlHnIkO4Bq_wx2SXqkUufRg5/view" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
 
-  <div class="project-card">
-    <h3>Production-Grade E-commerce Backend System</h3>
-    <p class="tech">FastAPI · PostgreSQL · SQLAlchemy · JWT · Docker · Render Cloud · Swagger</p>
+        <div class="education-col">
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item glass-panel">
+              <div class="timeline-dot"></div>
+              <div class="edu-header">
+                <h4>Vellore Institute of Technology – AP</h4>
+                <span class="edu-date">2022 – 2026</span>
+              </div>
+              <p class="edu-degree">B.Tech in Computer Science and Engineering</p>
+              <div class="gpa-tag">CGPA: 7.55 / 10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p><strong>Problem:</strong> Building a secure and scalable backend to support real-world e-commerce operations.</p>
-    <p><strong>Solution:</strong> Designed and developed a production-ready backend with authentication, product catalog,
-      cart management, order processing, and payment simulation.</p>
+    <section id="contact" class="section reveal pt-0">
+      <div class="cta-box glass-panel text-center">
+        <h2>Let's build something amazing together</h2>
+        <p>Currently seeking opportunities as a Backend / AI Engineer. Let's connect!</p>
+        
+        <div class="contact-info">
+          <a href="mailto:dineshreddykondur@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>dineshreddykondur@gmail.com</span>
+          </a>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hindupur, India</span>
+          </div>
+        </div>
+        
+        <div class="social-icons large-icons">
+          <a href="https://github.com/dinesh-07-27" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <ul>
-      <li>Implemented JWT-based authentication and role-based access control (Admin/User).</li>
-      <li>Built transactional order workflows with stock validation.</li>
-      <li>Designed relational data models using PostgreSQL + SQLAlchemy ORM.</li>
-      <li>Followed clean layered architecture (API, services, models, schemas, core, DB).</li>
-      <li>Containerized using Docker and deployed on Render with managed PostgreSQL.</li>
-      <li>Documented APIs using Swagger (OpenAPI).</li>
-    </ul>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">K Dinesh Reddy</div>
+      <p class="copyright">© 2026 K Dinesh Reddy. Designed & Built with <i class="fas fa-heart text-accent"></i></p>
+    </div>
+  </footer>
 
-    <p><strong>What I learned:</strong> Backend architecture design, secure authentication, cloud deployment, DevOps basics.</p>
-
-    <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
-  </div>
-
-  <div class="project-card">
-    <h3>Employee and Task Management Platform</h3>
-    <p class="tech">FastAPI · React · PostgreSQL · JWT · RBAC</p>
-
-    <ul>
-      <li>Developed full-stack system with Admin and Employee roles.</li>
-      <li>Designed secure authentication middleware.</li>
-      <li>Optimized SQL queries for CRUD operations.</li>
-      <li>Built protected dashboards using React.</li>
-    </ul>
-
-    <p><strong>What I learned:</strong> Secure API design, database modeling, role-based access control.</p>
-
-    <a href="https://github.com/dinesh-07-27/prou-fullstack-final" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
-  </div>
-
-  <div class="project-card">
-    <h3>Smart AI Customer Support Chatbot</h3>
-    <p class="tech">FastAPI · FAISS · RAG · Sentence-Transformers · Gemini API</p>
-
-    <ul>
-      <li>Built RAG-based chatbot for domain-specific Q&A.</li>
-      <li>Implemented semantic document search using FAISS.</li>
-      <li>Reduced latency by ~30% using async pipelines.</li>
-      <li>Designed modular backend services.</li>
-    </ul>
-
-    <p><strong>What I learned:</strong> AI integration in backend systems, vector databases, async optimization.</p>
-
-    <a href="https://github.com/dinesh-07-27/smart-ai-chatbot-v2" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
-  </div>
-</section>
-
-<section id="coding" class="section gray">
-  <h2>Coding & Problem Solving</h2>
-  <ul>
-    <li>LeetCode: 202+ problems solved</li>
-    <li>Strong in arrays, strings, hashing, recursion, stacks, queues, trees</li>
-    <li>Practicing optimization and clean coding techniques</li>
-  </ul>
-
-  <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i> View LeetCode Profile</a>
-</section>
-
-<section id="certifications" class="section">
-  <h2>Certifications</h2>
-  <ul>
-    <li>
-      <strong>IBM – Generative AI Using Watsonx (2025)</strong><br>
-      Learned foundation models, prompt engineering, and end-to-end GenAI workflows.<br>
-      <a href="https://courses.vit.skillsnetwork.site/certificates/70be47b081d24bd19938536500c2995a" target="_blank">View Certificate</a>
-    </li>
-    <li>
-      <strong>Oracle – OCI 2025 Generative AI Professional</strong><br>
-      Validated expertise in building and deploying secure AI workloads on OCI.<br>
-      <a href="https://drive.google.com/file/d/13465kZULvlHnIkO4Bq_wx2SXqkUufRg5/view" target="_blank">View Certificate</a>
-    </li>
-  </ul>
-</section>
-
-<section id="experience" class="section gray">
-  <h2>Experience & Activities</h2>
-  <ul>
-    <li>Built multiple academic and personal backend-focused projects.</li>
-    <li>Hands-on experience with Docker and cloud deployment workflows.</li>
-    <li>Participated in AI/ML workshops and technical bootcamps.</li>
-    <li>Regularly explore backend architecture patterns and system design concepts.</li>
-  </ul>
-</section>
-
-<section id="education" class="section">
-  <h2>Education</h2>
-  <p>
-    <strong>B.Tech in Computer Science and Engineering</strong><br>
-    Vellore Institute of Technology – Andhra Pradesh (2022 – 2026)<br>
-    CGPA: 7.55 / 10
-  </p>
-</section>
-
-<section id="contact" class="section gray">
-  <h2>Contact</h2>
-  <p>Email: dineshreddykondur@gmail.com</p>
-  <p>Location: Hindupur, India</p>
-
-  <div class="social-links">
-    <a href="https://github.com/dinesh-07-27" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://linkedin.com/in/dinesh-reddy-vit" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://leetcode.com/u/ap_22bce8279/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 K Dinesh Reddy</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
